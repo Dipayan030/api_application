@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/output.css" rel="stylesheet">
+    <title>Weather Application</title>
+  </head>
+  <body id="weatherAppBody" class="h-screen w-full flex flex-col justify-center items-center gap-8">
+    <div class="h-4/6 w-5/6 lg:w-4/6 xl:w-3/5 2xl:w-2/5 grid grid-rows-8 grid-cols-3 gap-6">
+      <input type="text" placeholder="Enter city name" id="city" class="col-span-3 md:col-span-2 rounded-xl p-4 font-roboto text-xl outline-none border-2 border-gray-300" id="cityInput"/>
+      <button class="rounded-xl col-span-3 md:col-span-1 bg-lime-200 font-roboto text-xl" onclick="fetchWeather()">Search</button>
+      <div class="row-span-6 md:row-span-7 col-span-3 rounded-xl p-8 font-poppins bg-white opacity-90 flex flex-col bg-linear-to-b from-[#8c52ff] via-[#8886ff] to-[#3432c7]">
+        <div class="h-1/2 grid grid-rows-2 grid-cols-3 px-4 md:px-18 w-full text-white font-extrabold rounded-xl bg-white/20 backdrop-blur-md backdrop-saturate-125">
+          <span class="flex items-end justify-center text-center">
+            <span>
+              <h2 class="text-5xl md:text-6xl" id="temperature"></h2>
+              <h3 class="text-sm md:text-lg mt-2" id="place"></h3>
+            </span>
+          </span>
+          <span class="flex justify-center items-center">
+            <h2 class="text-xl md:text-2xl" id="status"></h2>
+          </span>
+          <span class="">
+            <h2 class="justify-self-start"></h2>
+            <h3 class="text-xl mt-2 ml-3"></h3>
+          </span>
+          <span class="flex justify-center items-center text-center">
+            <span>
+              <h2 class="text-xl md:text-2xl" id="feels-like"></h2>
+              <h3 class="text-md md:text-xl md:mt-2" id="place">Feels Like</h3>
+            </span>
+          </span>
+          <span class="flex justify-center items-center text-center">
+            <span>
+              <h2 class="text-xl md:text-2xl" id="humidity"></h2>
+              <h3 class="text-md md:text-xl md:mt-2" id="place">Humidity</h3>
+            </span>
+          </span>
+          <span class="flex justify-center text-center items-center">
+            <span>
+              <h2 class="text-xl md:text-2xl" id="pressure"></h2>
+              <h3 class="text-md md:text-xl md:mt-2" id="place">Pressure</h3>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
