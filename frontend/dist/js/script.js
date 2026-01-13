@@ -1,6 +1,4 @@
 const apiKey = '6d1ebeb8e5508503150e885e24b9aa5e';
-let lat = 22.68724;
-let lon = 88.44476;
 async function fetchWeather() {
     const cityName = document.getElementById('city').value;
     const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
