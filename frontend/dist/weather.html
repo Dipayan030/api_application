@@ -7,19 +7,19 @@
     <title>Weather Application</title>
   </head>
   <body id="weatherAppBody" class="h-screen w-full flex flex-col justify-center items-center gap-8">
-    <div class="h-4/6 w-5/6 lg:w-4/6 xl:w-3/5 2xl:w-2/5 grid grid-rows-8 grid-cols-3 gap-6">
-      <input type="text" placeholder="Enter city name" id="city" class="col-span-3 md:col-span-2 rounded-xl p-4 font-roboto text-xl outline-none border-2 border-gray-300" id="cityInput"/>
-      <button class="rounded-xl col-span-3 md:col-span-1 bg-lime-200 font-roboto text-xl" onclick="fetchWeather()">Search</button>
-      <div class="row-span-6 md:row-span-7 col-span-3 rounded-xl p-8 font-poppins bg-white opacity-90 flex flex-col bg-linear-to-b from-[#8c52ff] via-[#8886ff] to-[#3432c7]">
+    <div class="h-5/6 md:h-4/6 w-5/6 lg:w-4/6 xl:w-3/5 2xl:w-2/5 grid grid-rows-8 grid-cols-3 gap-4 sm:gap-6">
+      <input type="text" placeholder="Enter city name" id="city" class="col-span-3 md:col-span-2 rounded-lg sm:rounded-xl p-4 font-roboto text-xl outline-none border sm:border-2 border-gray-300" id="cityInput"/>
+      <button class="rounded-lg sm:rounded-xl col-span-3 md:col-span-1 bg-lime-200 font-roboto text-xl" onclick="fetchWeather()">Search</button>
+      <div class="row-span-6 md:row-span-7 col-span-3 rounded-xl p-4 sm:p-8 font-poppins bg-white opacity-90 flex flex-col bg-linear-to-b from-[#8c52ff] via-[#8886ff] to-[#3432c7]">
         <div class="h-1/2 grid grid-rows-2 grid-cols-3 px-4 md:px-18 w-full text-white font-extrabold rounded-xl bg-white/20 backdrop-blur-md backdrop-saturate-125">
           <span class="flex items-end justify-center text-center">
             <span>
-              <h2 class="text-5xl md:text-6xl" id="temperature"></h2>
-              <h3 class="text-sm md:text-lg mt-2" id="place"></h3>
+              <h2 class="text-3xl sm:text-5xl md:text-6xl" id="temperature"></h2>
+              <h3 class="text-[0.7rem] sm:text-sm md:text-lg sm:mt-2" id="place"></h3>
             </span>
           </span>
           <span class="flex justify-center items-center">
-            <h2 class="text-xl md:text-2xl" id="status"></h2>
+            <h2 class="text-sunny sm:text-2xl mt-6 md:mt-4" id="status"></h2>
           </span>
           <span class="">
             <h2 class="justify-self-start"></h2>
@@ -27,20 +27,20 @@
           </span>
           <span class="flex justify-center items-center text-center">
             <span>
-              <h2 class="text-xl md:text-2xl" id="feels-like"></h2>
-              <h3 class="text-md md:text-xl md:mt-2" id="place">Feels Like</h3>
+              <h2 class="text-md sm:text-xl md:text-2xl" id="feels-like"></h2>
+              <h3 class="text-sm sm:text-md md:text-xl md:mt-2">Feels Like</h3>
             </span>
           </span>
           <span class="flex justify-center items-center text-center">
             <span>
-              <h2 class="text-xl md:text-2xl" id="humidity"></h2>
-              <h3 class="text-md md:text-xl md:mt-2" id="place">Humidity</h3>
+              <h2 class="text-md sm:text-xl md:text-2xl" id="humidity"></h2>
+              <h3 class="text-sm sm:text-md md:text-xl md:mt-2">Humidity</h3>
             </span>
           </span>
           <span class="flex justify-center text-center items-center">
             <span>
-              <h2 class="text-xl md:text-2xl" id="pressure"></h2>
-              <h3 class="text-md md:text-xl md:mt-2" id="place">Pressure</h3>
+              <h2 class="text-md sm:text-xl md:text-2xl" id="pressure"></h2>
+              <h3 class="text-sm sm:text-md md:text-xl md:mt-2">Pressure</h3>
             </span>
           </span>
         </div>
