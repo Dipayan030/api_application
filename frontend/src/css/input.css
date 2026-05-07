@@ -8,4 +8,11 @@
   --font-changa_one: "Changa One", sans-serif;
   --font-poppins: "Poppins", sans-serif;  
   --font-roboto: "Roboto", sans-serif;
+  
+  --animate-moving-gradient: move-bg 5s ease infinite;
+
+  @keyframes move-bg {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
 }
