@@ -6,7 +6,7 @@ window.onload = async function() {
     
     if (movieName) {
         // document.querySelector('#movieName').value = movieName;
-        const API_URL = `http://www.omdbapi.com/?s=${movieName}&apikey=${API_KEY}`;
+        const API_URL = `https://www.omdbapi.com/?s=${movieName}&apikey=${API_KEY}`;
         try{
             const response = await fetch(API_URL);
             if(!response.ok){
@@ -25,7 +25,7 @@ window.onload = async function() {
 async function findMovies(movieName){
     if (movieName) {
         // document.querySelector('#movieName').value = movieName;
-        const API_URL = `http://www.omdbapi.com/?s=${movieName}&apikey=${API_KEY}`;
+        const API_URL = `https://www.omdbapi.com/?s=${movieName}&apikey=${API_KEY}`;
         try{
             const response = await fetch(API_URL);
             if(!response.ok){
@@ -43,7 +43,7 @@ async function findMovies(movieName){
 
 async function fetchMovies(imdbID) {
     try{
-        const response = await fetch(`http://www.omdbapi.com/?i=${imdbID}&apikey=${API_KEY}`);
+        const response = await fetch(`https://www.omdbapi.com/?i=${imdbID}&apikey=${API_KEY}`);
         if(!response.ok){
                 throw new Error(`HTTP error! status: ${response.status}`);
         }
