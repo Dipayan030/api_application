@@ -1,17 +1,20 @@
-const API_KEY = 'e17d1576';
-const movie = 'Money Heist';
-async function fetchMovies() {
-    const API_URL = `http://www.omdbapi.com/?s=${movie}&apikey=${API_KEY}`;
-    try{
-        const response = await fetch(API_URL);
-        if(!response.ok){
-            throw new Error(`HTTP error! status: ${response.status}`);
+const searchButton = document.querySelector('#searchButton');
+const movieName = document.querySelector('#movieName');
+
+searchButton.addEventListener("click" , () => {
+    const movieName = document.querySelector('#movieName').value;
+    if (movieName) {
+        window.location.href = `search-movies.html?q=${encodeURIComponent(movieName)}`;
+    }
+    console.log(movieName);
+});
+
+movieName.addEventListener("keydown" , (event) => {
+    if (event.key === 'Enter'){
+        const movieName = document.querySelector('#movieName').value;
+        if (movieName) {
+            window.location.href = `search-movies.html?q=${encodeURIComponent(movieName)}`;
         }
-        const movieData = await response.json();
-        console.log(movieData);
+        console.log(movieName);
     }
-    catch(error){
-        console.error('could not fetch data:',error);
-    }
-}
-fetchMovies();
+});
