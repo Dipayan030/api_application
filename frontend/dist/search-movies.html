@@ -6,78 +6,23 @@
     <link href="css/output.css" rel="stylesheet">
     <title>Search Movies</title>
 </head>
-<body class="h-screen w-screen flex p-12 gap-12">
-    <div class="h-full w-34 bg-gray-100 rounded-4xl flex flex-col justify-start items-center gap-8 py-8">
+<body class="h-screen w-screen lg:flex lg:flex-row flex-col p-1 md:p-12 gap-12">
+    <!-- <div class="h-22 lg:h-full w-full lg:w-34 lg:bg-gray-100 rounded-4xl flex lg:flex-col  justify-center lg:justify-start items-center gap-8 py-8">
         <a href="movie.html"><div class="h-16 w-16 bg-purple-200 hover:bg-purple-400 border-3 rounded-2xl"></div></a>
         <a href="search-movies.html"><div class="h-16 w-16 bg-purple-200 hover:bg-purple-400 border-3 rounded-2xl"></div></a>
         <a href="movie.html"><div class="h-16 w-16 bg-purple-200 hover:bg-purple-400 border-3 rounded-2xl"></div></a>
         <a href="search-movies.html"><div class="h-16 w-16 bg-purple-200 hover:bg-purple-400 border-3 rounded-2xl"></div></a>
-    </div>
+    </div> -->
     <!-- main body  -->
     <div class="h-full w-full p-8 flex flex-col gap-16 items-center">
-        <div class="h-28 w-3/5 rounded-2xl flex items-center bg-gray-100">
-            <input id="movieName" placeholder="Search Movies" class="size-full rounded-xl px-8 flex items-center text-2xl font-roboto font-semibold border-none outline-0"></input>
-            <div class="bg-gray-200 h-full w-28 rounded-xl flex items-center p-1 hover:bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 bg-size-[200%_200%] animate-moving-gradient">
+        <div class="h-22 lg:h-28 w-full lg:w-3/5 rounded-2xl flex items-center bg-gray-100 p-2 lg:px-4">
+            <input id="movieName" placeholder="Search Movies" class="size-full rounded-xl px-8 flex items-center text-lg lg:text-2xl font-roboto font-semibold border-none outline-0"></input>
+            <div class="bg-gray-200 h-full w-26 rounded-xl flex items-center p-1 hover:bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 bg-size-[200%_200%] animate-moving-gradient">
                 <button id="searchButton" class="size-full bg-gray-200 rounded-lg"></button>
             </div>
         </div>
         <div class="size-full overflow-y-auto">
-            <div id="movieContainer" class="w-full h-auto grid grid-cols-2 xl:grid-cols-5 gap-4 ">
-                <!-- <div class="h-160 bg-gray-100 p-2 flex flex-col gap-2 rounded-xl">
-                    <div class="h-4/5 w-full bg-amber-100 rounded-xl">
-                        <img src="" alt="" class="h-full object-cover">
-                    </div>
-                    <div class="h-auto w-full p-2 font-poppins flex flex-col gap-0.5 text-lg font-bold">
-                        <h1 class="text-2xl mb-2">Endgame</h1>
-                        <p class="text-gray-500">Movie • Sci-fi • </p>
-                        <p class="text-gray-500">IMDb: 8.2</p>
-                        <p class="text-gray-500">Rotten Tomatoes: 94%</p>
-                    </div>
-                </div>
-                <div class="h-160 bg-gray-100 p-2 flex flex-col gap-2 rounded-xl">
-                    <div class="h-4/5 w-full bg-amber-100 rounded-xl">
-                        <img src="" alt="" class="h-full object-cover">
-                    </div>
-                    <div class="h-auto w-full p-2 font-poppins flex flex-col gap-0.5 text-lg font-bold">
-                        <h1 class="text-2xl mb-2">Endgame</h1>
-                        <p class="text-gray-500">Movie • Sci-fi • </p>
-                        <p class="text-gray-500">IMDb: 8.2</p>
-                        <p class="text-gray-500">Rotten Tomatoes: 94%</p>
-                    </div>
-                </div>
-                <div class="h-160 bg-gray-100 p-2 flex flex-col gap-2 rounded-xl">
-                    <div class="h-4/5 w-full bg-amber-100 rounded-xl">
-                        <img src="" alt="" class="h-full object-cover">
-                    </div>
-                    <div class="h-auto w-full p-2 font-poppins flex flex-col gap-0.5 text-lg font-bold">
-                        <h1 class="text-2xl mb-2">Endgame</h1>
-                        <p class="text-gray-500">Movie • Sci-fi • </p>
-                        <p class="text-gray-500">IMDb: 8.2</p>
-                        <p class="text-gray-500">Rotten Tomatoes: 94%</p>
-                    </div>
-                </div>
-                <div class="h-160 bg-gray-100 p-2 flex flex-col gap-2 rounded-xl">
-                    <div class="h-4/5 w-full bg-amber-100 rounded-xl">
-                        <img src="" alt="" class="h-full object-cover">
-                    </div>
-                    <div class="h-auto w-full p-2 font-poppins flex flex-col gap-0.5 text-lg font-bold">
-                        <h1 class="text-2xl mb-2">Endgame</h1>
-                        <p class="text-gray-500">Movie • Sci-fi • </p>
-                        <p class="text-gray-500">IMDb: 8.2</p>
-                        <p class="text-gray-500">Rotten Tomatoes: 94%</p>
-                </div>
-                <div class="h-160 bg-gray-100 p-2 flex flex-col gap-2 rounded-xl">
-                    <div class="h-4/5 w-full bg-amber-100 rounded-xl">
-                        <img src="" alt="" class="h-full object-cover">
-                    </div>
-                    <div class="h-auto w-full p-2 font-poppins flex flex-col gap-0.5 text-lg font-bold">
-                        <h1 class="text-2xl mb-2">Endgame</h1>
-                        <p class="text-gray-500">Movie • Sci-fi • </p>
-                        <p class="text-gray-500">IMDb: 8.2</p>
-                        <p class="text-gray-500">Rotten Tomatoes: 94%</p>
-                    </div>
-                </div> -->
-            </div>
+            <div id="movieContainer" class="w-full h-auto grid grid-cols-2 xl:grid-cols-5 gap-4 "></div>
         </div>
     </div>
     <script src="js/search-movies.js"></script>

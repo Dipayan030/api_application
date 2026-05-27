@@ -83,12 +83,12 @@ const fetchMovieDetails = (movieData) => {
 const displayMovies = (detailedMovieData) => {
     const movieContainer = document.querySelector('#movieContainer');
     movieContainer.innerHTML += `
-    <div class="h-186 bg-gray-100 p-2 flex flex-col gap-2 rounded-xl">
+    <div class="h-140 lg:h-186 bg-gray-100 p-2 flex flex-col gap-2 rounded-xl">
         <div class="h-4/6 w-full bg-amber-100 rounded-xl">
             <img src="${detailedMovieData.Poster}" alt="" class="size-full rounded-lg object-cover">
         </div>
-        <div class="h-auto w-full p-2 font-poppins flex flex-col gap-0.5 text-lg font-bold">
-            <h1 class="text-2xl mb-2">${detailedMovieData.Title}</h1>
+        <div class="h-auto w-full p-2 font-poppins flex flex-col gap-0.5 text-sm lg:text-lg font-bold">
+            <h1 class="text-lg lg:text-2xl mb-2">${detailedMovieData.Title}</h1>
             <p class="text-gray-500">${detailedMovieData.Type} • Sci-fi • ${detailedMovieData.Year}</p>
             <p class="text-gray-500">IMDb: ${detailedMovieData.Ratings[0].Value}</p>
             <p class="text-gray-500">Rotten Tomatoes: ${detailedMovieData.Ratings[0].Value}</p>

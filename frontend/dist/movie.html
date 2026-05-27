@@ -6,29 +6,29 @@
     <link href="css/output.css" rel="stylesheet">
     <title>Movie Dashboard</title>
 </head>
-<body class="h-screen w-screen flex p-12 gap-12">
+<body class="h-screen w-screen lg:flex lg:flex-row flex-col p-12 gap-12">
     <!-- navbar  -->
-    <div class="h-full w-34 bg-gray-100 rounded-4xl flex flex-col justify-start items-center gap-8 py-8">
+    <!-- <div class="h-22 lg:h-full w-full lg:w-34 lg:bg-gray-100 rounded-4xl flex lg:flex-col  justify-center lg:justify-start items-center gap-8 py-8">
         <a href="movie.html"><div class="h-16 w-16 bg-purple-200 hover:bg-purple-400 border-3 rounded-2xl"></div></a>
         <a href="search-movies.html"><div class="h-16 w-16 bg-purple-200 hover:bg-purple-400 border-3 rounded-2xl"></div></a>
         <a href="movie.html"><div class="h-16 w-16 bg-purple-200 hover:bg-purple-400 border-3 rounded-2xl"></div></a>
         <a href="search-movies.html"><div class="h-16 w-16 bg-purple-200 hover:bg-purple-400 border-3 rounded-2xl"></div></a>
-    </div>
+    </div> -->
     <!-- main body  -->
-    <div class="h-full w-full p-32 flex flex-col gap-16 justify-center items-center">
-        <h1 class="font-poppins font-semibold text-7xl text-neutral-900 self-center mb-10">All Movies in <span class="bg-linear-to-r from-fuchsia-500 to-purple-600 bg-clip-text font-extrabold text-transparent">OnePlace</span></h1>
-        <div class="h-28 w-3/5 rounded-2xl flex px-4 items-center bg-gray-100">
-            <input id="movieName" type="text" placeholder="Endgame or Game of Thrones" class="size-full rounded-xl px-4 flex items-center text-2xl font-poppins font-semibold border-none outline-0"></input>
-            <div class="h-20 w-28 rounded-xl p-1 hover:bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 bg-size-[200%_200%] animate-moving-gradient">
+    <div class="h-full w-full p-12 lg:p-32 flex flex-col gap-16 justify-center items-center">
+        <h1 class="text-center font-poppins font-semibold text-5xl lg:text-7xl text-neutral-900 self-center mb-10">All Movies in <span class="bg-linear-to-r from-fuchsia-500 to-purple-600 bg-clip-text font-extrabold text-transparent">OnePlace</span></h1>
+        <div class="h-20 lg:h-28 w-full lg:w-3/5 rounded-2xl flex px-2 lg:px-4 items-center bg-gray-100">
+            <input id="movieName" type="text" placeholder="Endgame or Game of Thrones" class="size-full rounded-xl px-4 flex items-center text-lg lg:text-2xl font-poppins font-semibold border-none outline-0"></input>
+            <div class="h-16 lg:h-20 w-26 lg:w-28 rounded-xl p-1 hover:bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 bg-size-[200%_200%] animate-moving-gradient">
                 <button id="searchButton" class="size-full bg-gray-200 rounded-lg"></button>
             </div>
         </div>
-        <div class="h-18 w-3/5 flex justify-center items-center gap-6">
-            <div class="h-full w-auto font-poppins font-black text-lg text-amber-950 p-8 flex items-center justify-center bg-amber-200 border-3 border-gray-900 rounded-xl">Home</div>
-            <div class="h-full w-auto font-poppins font-black text-lg text-pink-950 p-8 flex items-center justify-center bg-pink-200 border-3 border-gray-900 rounded-xl">Search Movies</div>
-            <div class="h-full w-auto font-poppins font-black text-lg text-lime-950 p-8 flex items-center justify-center bg-lime-200 border-3 border-gray-900 rounded-xl">Wishlist</div>
-            <div class="h-full w-auto font-poppins font-black text-lg text-blue-950 p-8 flex items-center justify-center bg-blue-200 border-3 border-gray-900 rounded-xl">Trending</div>
-        </div>
+        <!-- <div class="h-8 lg:h-18 w-3/5 flex justify-center items-center gap-6">
+            <div class="h-full w-auto font-poppins font-black text-sm text-amber-950 p-6 lg:p-8 flex items-center justify-center bg-amber-200 border-3 border-gray-900 rounded-xl">Home</div>
+            <div class="h-full w-auto font-poppins font-black text-sm text-pink-950 p-6 lg:p-8 flex items-center justify-center bg-pink-200 border-3 border-gray-900 rounded-xl">Search Movies</div>
+            <div class="h-full w-auto font-poppins font-black text-sm text-lime-950 p-6 lg:p-8 flex items-center justify-center bg-lime-200 border-3 border-gray-900 rounded-xl">Wishlist</div>
+            <div class="h-full w-auto font-poppins font-black text-sm text-blue-950 p-6 lg:p-8 flex items-center justify-center bg-blue-200 border-3 border-gray-900 rounded-xl">Trending</div>
+        </div> -->
     </div>
     <script src="js/movie.js"></script>
 </body>
