@@ -83,7 +83,7 @@ const fetchMovieDetails = (movieData) => {
 const displayMovies = (detailedMovieData) => {
     const movieContainer = document.querySelector('#movieContainer');
     movieContainer.innerHTML += `
-    <div class="h-140 lg:h-186 bg-gray-100 p-2 flex flex-col gap-2 rounded-xl">
+    <div class="h-126 lg:h-186 bg-gray-100 p-2 flex flex-col gap-2 rounded-xl">
         <div class="h-4/6 w-full bg-amber-100 rounded-xl">
             <img src="${detailedMovieData.Poster}" alt="" class="size-full rounded-lg object-cover">
         </div>
@@ -94,7 +94,7 @@ const displayMovies = (detailedMovieData) => {
             <p class="text-gray-500">Rotten Tomatoes: ${detailedMovieData.Ratings[0].Value}</p>
         </div>
         <div class="h-full w-full flex items-stretch">
-            <button class="h-12 rounded-lg self-end w-full bg-gray-300 flex justify-center items-center font-poppins text-gray-500 text-xl hover:bg-violet-400 hover:text-white">+ Add</button>
+            <button class="h-10 lg:h-12 rounded-lg self-end w-full bg-gray-300 flex justify-center items-center font-poppins text-gray-500 text-xl hover:bg-violet-400 hover:text-white">+ Add</button>
         </div>
     </div>
     `;

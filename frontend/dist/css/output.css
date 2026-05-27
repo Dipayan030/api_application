@@ -252,21 +252,6 @@
   .ml-3 {
     margin-left: calc(var(--spacing) * 3);
   }
-  .ml-6 {
-    margin-left: calc(var(--spacing) * 6);
-  }
-  .ml-8 {
-    margin-left: calc(var(--spacing) * 8);
-  }
-  .ml-12 {
-    margin-left: calc(var(--spacing) * 12);
-  }
-  .ml-16 {
-    margin-left: calc(var(--spacing) * 16);
-  }
-  .ml-66 {
-    margin-left: calc(var(--spacing) * 66);
-  }
   .flex {
     display: flex;
   }
@@ -301,6 +286,9 @@
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
@@ -315,6 +303,15 @@
   }
   .h-26 {
     height: calc(var(--spacing) * 26);
+  }
+  .h-120 {
+    height: calc(var(--spacing) * 120);
+  }
+  .h-126 {
+    height: calc(var(--spacing) * 126);
+  }
+  .h-130 {
+    height: calc(var(--spacing) * 130);
   }
   .h-140 {
     height: calc(var(--spacing) * 140);
@@ -642,6 +639,10 @@
   .font-roboto {
     font-family: var(--font-roboto);
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -950,6 +951,11 @@
       display: flex;
     }
   }
+  .lg\:h-12 {
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 12);
+    }
+  }
   .lg\:h-18 {
     @media (width >= 64rem) {
       height: calc(var(--spacing) * 18);
@@ -1010,6 +1016,11 @@
       justify-content: flex-start;
     }
   }
+  .lg\:gap-4 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
   .lg\:bg-gray-100 {
     @media (width >= 64rem) {
       background-color: var(--color-gray-100);
@@ -1020,6 +1031,11 @@
       padding: calc(var(--spacing) * 8);
     }
   }
+  .lg\:p-12 {
+    @media (width >= 64rem) {
+      padding: calc(var(--spacing) * 12);
+    }
+  }
   .lg\:p-32 {
     @media (width >= 64rem) {
       padding: calc(var(--spacing) * 32);
@@ -1028,6 +1044,11 @@
   .lg\:px-4 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 4);
+    }
+  }
+  .lg\:px-8 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 8);
     }
   }
   .lg\:px-28 {
@@ -1057,6 +1078,12 @@
     @media (width >= 64rem) {
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
+  .lg\:text-xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .xl\:w-2\/5 {
